@@ -1,0 +1,48 @@
+.notes-article {
+  background-color: $form-background;
+  padding: 15px;
+  border: 1px solid $form-border;
+  border-radius: 35px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+
+  article {
+      flex: 0 0 45%; 
+      background-color: $card-background;
+      margin: 10px;
+      padding: 15px;
+      border: 1px solid $card-border;
+      border-radius: 10px;
+      text-align: center;
+
+      h2, h3, p {
+          flex: 2;
+      }
+
+      button {
+          border-radius: 2.6rem;
+          background-color: $primary-color;
+          color: $text-color;
+          padding: .6rem;
+
+          &:hover {
+              background-color: darken($primary-color, 10%);
+              filter: hue-rotate(266deg);
+          }
+      }
+  }
+
+
+  
+    h2 {
+      color: $user-titel-text;
+      margin-bottom: 10px;
+      text-decoration: underline;
+    }
+  
+    .user-notes {
+      color: rgb(35, 107, 163);
+    }
+  }
